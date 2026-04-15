@@ -1,0 +1,52 @@
+/* =========================================
+   Global Styles & Animations (display.css)
+   ========================================= */
+
+/* 1. Reset basic padding and margins for a clean slate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Soft background for the whole app to make white cards pop */
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 3. Smooth fade-in animation used across all your pages */
+.fade-in {
+  animation: fadeInAnimation 0.5s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 4. Custom Scrollbar to make the app look premium */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
